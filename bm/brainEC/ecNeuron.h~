@@ -1,0 +1,42 @@
+//
+// Created by palsol on 10/31/2015.
+//
+
+#ifndef BMSMALLWORLD_NEURONEC_H
+#define BMSMALLWORLD_NEURONEC_H
+
+#include"ecConstant.h"
+
+double ecNeuronE(double W, double U, double Z);
+
+double ecNeuronCalcium(double V, double W_Calcium,   double U_Calcium,
+                                 double W_Potassium, double U_Potassium,
+                                 double W_Natrium,   double U_Natrium,
+                                 double W_Chlorine,  double U_Chlorine,
+                                 double W_Glutamate, double U_Glutamate);
+
+double ecNeuronPotassium(double V, double W_Calcium,   double U_Calcium,
+                                   double W_Potassium, double U_Potassium,
+                                   double W_Natrium,   double U_Natrium,
+                                   double W_Chlorine,  double U_Chlorine,
+                                   double W_Glutamate, double U_Glutamate);
+
+double ecNeuronNatrium(double V, double W_Calcium,   double U_Calcium,
+                                 double W_Potassium, double U_Potassium,
+                                 double W_Natrium,   double U_Natrium,
+                                 double W_Chlorine,  double U_Chlorine,
+                                 double W_Glutamate, double U_Glutamate);
+
+double ecNeuronChlorine(double V, double W_Calcium,   double U_Calcium,
+                        double W_Potassium, double U_Potassium,
+                        double W_Natrium,   double U_Natrium,
+                        double W_Chlorine,  double U_Chlorine,
+                        double W_Glutamate, double U_Glutamate);
+double ecNeuronGlutamate(double V, double W_Calcium,   double U_Calcium,
+                         double W_Potassium, double U_Potassium,
+                         double W_Natrium,   double U_Natrium,
+                         double W_Chlorine,  double U_Chlorine,
+                         double W_Glutamate, double U_Glutamate);
+
+
+#endif //BMSMALLWORLD_NEURONEC_H
